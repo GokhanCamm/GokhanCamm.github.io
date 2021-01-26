@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.79.0">
+  <title>Cover Template · Bootstrap v5.0</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="cover.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+    <header class="mb-auto">
+
+      <nav class="nav nav-masthead justify-content-left float-md-end" id="navbar1">
+        <a class="nav-link active" aria-current="page" href="#">Home</a></li>
+        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="#">Services</a>
+        <a class="nav-link" href="#">Blog</a>
+        <a class="nav-link" href="#">F.A.Q</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+
+    </header>
+    <main class="px-3">
+      <div>
+        <img src="logo.png" id=logo>
+      </div>
+      <div>
+        <h1 id="header1">Mapping the future</h1>
+        <p class="lead" id="text1">Universal solutions for your local problems..</p>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white" id="emailare">Enter your email</a>
+          <a href="#" class="btn btn-lg btn-secondary fw-bold  bg-black" id="gets">Get started</a>
+        </p>
+        <img src="thndasigs.png" id=things>
+        <div id="mapid"></div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#FirstModal" id="aboutus">
+          About us
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="FirstModal" tabindex="-1" role="dialog" aria-labelledby="CenterTitle"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="LongTitle" style="color: black;">Our story..</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="color:rgb(0, 0, 0) ; align-content: stretch;">
+                Established in Warsaw in 2020 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor ullamcorper tincidunt. Fusce
+                congue metus ut turpis congue
+                vestibulum. Cras sollicitudin massa et massa molestie pharetra. Pellentesque eget odio est. Sed rutrum,
+                orci in aliquam scelerisque, ex
+                mauris semper velit, nec porta augue massa eget ante. Phasellus hendrerit scelerisque urna, quis finibus
+                lectus lobortis vehicula. Aenean
+                lacinia imperdiet fermentum. Donec vehicula suscipit dui, nec malesuada arcu faucibus eget. In
+                pellentesque, urna nec porttitor imperdiet,
+                felis dolor bibendum quam, tincidunt efficitur sapien eros at ipsum. Sed at congue lectus, feugiat
+                accumsan nunc. Mauris quis dolor
+                eleifend, interdum mi nec, ultricies lectus. Interdum et malesuada fames ac ante ipsum primis in
+                faucibus. Curabitur consectetur lectus ut
+                sem tempus cursus.
+                <img src="drone.png" />
+                Phasellus mauris elit, suscipit quis est nec, iaculis mollis mauris. Quisque lacinia arcu aliquet orci
+                dignissim commodo. Duis ullamcorper
+                efficitur dapibus. Nulla mi ante, commodo at tellus in, feugiat aliquam tortor. Nam et velit congue,
+                tristique elit at, tincidunt dui. Maecenas
+                placerat eget nunc ut tincidunt. Donec vel dolor nec dui dapibus gravida tempus vitae ante. Etiam
+                faucibus sapien vitae eros iaculis
+                pellentesque. Integer at sodales tellus, ut suscipit est. Nulla dignissim ultrices ullamcorper.
+                <img src="lidar.png" />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    </main>
+    <footer class="mt-auto text-white-50">
+      <p id="footer1">&#169;2020 Gökhan Çam Mapping Services</p>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
